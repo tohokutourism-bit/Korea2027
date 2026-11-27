@@ -1,943 +1,816 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>永沢家 韓国・ソウル＆水原 年末年始旅のしおり 2026-2027</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0f7ff',
-                            100: '#e0effe',
-                            500: '#2563eb',
-                            600: '#1d4ed8',
-                            700: '#1e40af',
-                            900: '#1e3a8a',
-                        },
-                        korea: {
-                            red: '#c92a2a',
-                            blue: '#1864ab',
-                            gold: '#d97706'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            top: 24px;
-            bottom: 24px;
-            left: 20px;
-            width: 2px;
-            background-color: #e5e7eb;
-            z-index: 0;
-        }
-        .hide-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .hide-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>永沢家 韓国・ソウル＆水原 年末年始旅のしおり（2026–2027）</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+    body { 
+      font-family: 'Noto Sans JP', sans-serif;
+      background-color: #f8fafc;
+    }
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen pb-20 md:pb-10">
+<body class="text-slate-800 min-h-screen pb-16 antialiased">
 
-    <!-- Header / Banner -->
-    <header class="relative bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 text-white pt-10 pb-16 px-4 sm:px-6 shadow-xl overflow-hidden">
-        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-        
-        <div class="max-w-4xl mx-auto relative z-10">
-            <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 backdrop-blur-md text-blue-200 border border-white/20">
-                    <i data-lucide="users" class="w-3.5 h-3.5"></i> 永沢家 4人家族旅行
-                </span>
-                <span class="inline-flex items-center gap-1 text-xs text-slate-300">
-                    <i data-lucide="calendar" class="w-3.5 h-3.5"></i> 2026.12.30 Wed - 2027.01.03 Sun
-                </span>
+  <!-- ヘッダーエリア (紺色グラデーション) -->
+  <header class="bg-gradient-to-r from-blue-950 via-indigo-900 to-slate-900 text-white pt-8 pb-6 px-4 shadow-xl">
+    <div class="max-w-2xl mx-auto space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <span class="inline-flex items-center gap-1.5 bg-blue-500/20 text-blue-200 text-xs px-3 py-1 rounded-full border border-blue-400/30 font-semibold">
+          <i data-lucide="users" class="w-3.5 h-3.5"></i> 永沢家 4人家族旅行
+        </span>
+        <span class="text-xs font-mono text-slate-300 bg-slate-900/80 px-3 py-1 rounded-md border border-slate-700/80 flex items-center gap-1.5">
+          <i data-lucide="calendar" class="w-3.5 h-3.5 text-blue-400"></i> 2026.12.30 Wed - 2027.01.03 Sun
+        </span>
+      </div>
+      
+      <div>
+        <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight flex items-center gap-2">
+          韓国・ソウル＆水原 年末年始旅のしおり
+          <span class="text-xl">❄️ KR</span>
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1.5">
+          山形 〜 仙台(SDJ) ✈️ 仁川(ICN) ➔ 新村・鍾路・水原・雲西を巡る4泊5日プレミアム年越しツアー
+        </p>
+      </div>
+
+      <!-- フライト概要カード -->
+      <div class="grid grid-cols-2 gap-3 pt-1">
+        <div class="bg-slate-900/70 border border-slate-700/70 rounded-xl p-3 text-xs flex items-center justify-between shadow-inner">
+          <div>
+            <div class="text-blue-300 font-bold flex items-center gap-1">
+              <i data-lucide="plane-takeoff" class="w-3.5 h-3.5"></i> 往路 (12/30)
             </div>
-            
-            <h1 class="text-2xl sm:text-4xl font-bold tracking-tight text-white mb-2">
-                韓国・ソウル＆水原 年末年始旅のしおり ❄️🇰🇷
-            </h1>
-            <p class="text-slate-300 text-xs sm:text-sm max-w-xl">
-                山形 〜 仙台(SDJ) ✈️ 仁川(ICN) ➔ 新村・鍾路・水原・雲西を巡る4泊5日プレミアム年越しツアー
-            </p>
-
-            <!-- Quick Flight Specs Header Summary -->
-            <div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-white/10 text-xs sm:text-sm">
-                <div class="bg-white/5 rounded-xl p-3 border border-white/10 backdrop-blur-sm flex items-center justify-between">
-                    <div>
-                        <div class="text-slate-400 text-[10px] uppercase font-semibold tracking-wider">往路 (12/30)</div>
-                        <div class="font-bold text-white text-sm sm:text-base">SDJ 12:45 ➔ ICN 15:20</div>
-                    </div>
-                    <i data-lucide="plane-takeoff" class="w-5 h-5 text-blue-400"></i>
-                </div>
-                <div class="bg-white/5 rounded-xl p-3 border border-white/10 backdrop-blur-sm flex items-center justify-between">
-                    <div>
-                        <div class="text-slate-400 text-[10px] uppercase font-semibold tracking-wider">復路 (01/03)</div>
-                        <div class="font-bold text-white text-sm sm:text-base">ICN 09:35 ➔ SDJ 11:45</div>
-                    </div>
-                    <i data-lucide="plane-landing" class="w-5 h-5 text-indigo-400"></i>
-                </div>
+            <div class="text-sm font-extrabold text-white mt-0.5">SDJ 12:45 ➔ ICN 15:20</div>
+            <div class="text-slate-400 text-[11px] mt-0.5">アシアナ航空 OZ151</div>
+          </div>
+          <i data-lucide="plane" class="w-5 h-5 text-blue-400 rotate-45 hidden sm:block"></i>
+        </div>
+        <div class="bg-slate-900/70 border border-slate-700/70 rounded-xl p-3 text-xs flex items-center justify-between shadow-inner">
+          <div>
+            <div class="text-indigo-300 font-bold flex items-center gap-1">
+              <i data-lucide="plane-landing" class="w-3.5 h-3.5"></i> 復路 (01/03)
             </div>
+            <div class="text-sm font-extrabold text-white mt-0.5">ICN 09:35 ➔ SDJ 11:45</div>
+            <div class="text-slate-400 text-[11px] mt-0.5">アシアナ航空 OZ152</div>
+          </div>
+          <i data-lucide="plane" class="w-5 h-5 text-indigo-400 -rotate-45 hidden sm:block"></i>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <!-- Navigation Tabs Sticky Container -->
-    <div class="sticky top-0 z-40 glass-effect border-b border-slate-200/80 shadow-sm">
-        <div class="max-w-4xl mx-auto px-2 sm:px-4">
-            <nav class="flex space-x-1 sm:space-x-2 overflow-x-auto hide-scrollbar py-2.5" id="tabNav" aria-label="Tabs">
-                <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn active inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold transition-all whitespace-nowrap bg-blue-600 text-white shadow-sm">
-                    <i data-lucide="compass" class="w-4 h-4"></i> 概要・ホテル
-                </button>
-                <button onclick="switchTab('day1')" id="tab-day1" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <span class="w-2 h-2 rounded-full bg-blue-500"></span> Day 1 (12/30)
-                </button>
-                <button onclick="switchTab('day2')" id="tab-day2" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <span class="w-2 h-2 rounded-full bg-indigo-500"></span> Day 2 (12/31)
-                </button>
-                <button onclick="switchTab('day3')" id="tab-day3" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <span class="w-2 h-2 rounded-full bg-red-500"></span> Day 3 (01/01)
-                </button>
-                <button onclick="switchTab('day4')" id="tab-day4" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <span class="w-2 h-2 rounded-full bg-amber-500"></span> Day 4 (01/02)
-                </button>
-                <button onclick="switchTab('day5')" id="tab-day5" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Day 5 (01/03)
-                </button>
-                <button onclick="switchTab('memo')" id="tab-memo" class="tab-btn inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all whitespace-nowrap">
-                    <i data-lucide="check-square" class="w-4 h-4"></i> メモ・準備
-                </button>
-            </nav>
-        </div>
+  <!-- メインコンテンツ -->
+  <main class="max-w-2xl mx-auto px-4 mt-6 space-y-6">
+
+    <!-- 日付切替ナビゲーション -->
+    <div class="flex border-b border-slate-200 overflow-x-auto text-xs sm:text-sm font-bold bg-white rounded-t-xl p-1.5 gap-1.5 scrollbar-none shadow-sm">
+      <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center bg-blue-600 text-white whitespace-nowrap transition-all shadow-sm flex items-center justify-center gap-1.5">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 概要・ホテル
+      </button>
+      <button onclick="switchTab('day1')" id="tab-day1" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all">Day 1 (12/30)</button>
+      <button onclick="switchTab('day2')" id="tab-day2" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all">Day 2 (12/31)</button>
+      <button onclick="switchTab('day3')" id="tab-day3" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all">Day 3 (01/01)</button>
+      <button onclick="switchTab('day4')" id="tab-day4" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all">Day 4 (01/02)</button>
+      <button onclick="switchTab('day5')" id="tab-day5" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all">Day 5 (01/03)</button>
+      <button onclick="switchTab('memo')" id="tab-memo" class="tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all flex items-center justify-center gap-1.5">
+        <i data-lucide="check-square" class="w-3.5 h-3.5"></i> メモ・準備
+      </button>
     </div>
 
-    <!-- Main Content Area -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6">
+    <!-- コンテンツエリア -->
+    <div class="space-y-6">
+      
+      <!-- 概要・ホテル タブ -->
+      <div id="content-overview" class="tab-content space-y-4">
+        
+        <!-- 目的地・日程 -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-2">
+          <div class="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider">
+            <span class="w-7 h-7 rounded-full bg-blue-50 flex items-center justify-center">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </span>
+            目的地・日程
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 pt-1">韓国（ソウル・水原・雲西）</h3>
+          <p class="text-xs text-slate-500">2026/12/30(水) 〜 2027/01/03(日) 4泊5日</p>
+        </div>
 
-        <!-- OVERVIEW TAB -->
-        <section id="content-overview" class="tab-content space-y-6">
-            <!-- Basic Trip Info Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="flex items-center gap-3 text-slate-500 mb-2">
-                        <div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
-                            <i data-lucide="map-pin" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-xs font-bold uppercase tracking-wider">目的地・日程</span>
-                    </div>
-                    <div class="font-bold text-slate-800 text-base">韓国（ソウル・水原・雲西）</div>
-                    <div class="text-xs text-slate-500 mt-1">2026/12/30(水) 〜 2027/01/03(日) 4泊5日</div>
-                </div>
+        <!-- 移動・人数 -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-2">
+          <div class="flex items-center gap-2 text-indigo-600 text-xs font-bold uppercase tracking-wider">
+            <span class="w-7 h-7 rounded-full bg-indigo-50 flex items-center justify-center">
+              <i data-lucide="car" class="w-4 h-4"></i>
+            </span>
+            移動・人数
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 pt-1">大人4名（永沢家）</h3>
+          <p class="text-xs text-slate-600 font-medium">
+            山形自宅 🚗 自家用車(プリウス/スーツケース2個) ➔ 仙台空港(SDJ) ✈️ 仁川(ICN)
+          </p>
+        </div>
 
-                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="flex items-center gap-3 text-slate-500 mb-2">
-                        <div class="p-2 bg-indigo-50 text-indigo-600 rounded-lg">
-                            <i data-lucide="car" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-xs font-bold uppercase tracking-wider">移動・人数</span>
-                    </div>
-                    <div class="font-bold text-slate-800 text-base">大人4名（永沢家）</div>
-                    <div class="text-xs text-slate-500 mt-1">山形自宅 🚗 仙台空港(SDJ) ✈️ 仁川</div>
-                </div>
+        <!-- 旅のポイント -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-2">
+          <div class="flex items-center gap-2 text-amber-600 text-xs font-bold uppercase tracking-wider">
+            <span class="w-7 h-7 rounded-full bg-amber-50 flex items-center justify-center">
+              <i data-lucide="sparkles" class="w-4 h-4"></i>
+            </span>
+            旅のポイント
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 pt-1">年末年始 ＆ グルメ ＆ 水原</h3>
+          <p class="text-xs text-slate-600">珍味食堂限定限定、サンナクジ、水原カルビ、大型スーパー買い物</p>
+        </div>
 
-                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                    <div class="flex items-center gap-3 text-slate-500 mb-2">
-                        <div class="p-2 bg-amber-50 text-amber-600 rounded-lg">
-                            <i data-lucide="snowflake" class="w-5 h-5"></i>
-                        </div>
-                        <span class="text-xs font-bold uppercase tracking-wider">旅のポイント</span>
-                    </div>
-                    <div class="font-bold text-slate-800 text-base">年末年始 ＆ グルメ＆水原</div>
-                    <div class="text-xs text-slate-500 mt-1">真味食堂確定、サンナクチ、水原カルビ</div>
-                </div>
+        <!-- 宿泊先一覧（3拠点） -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-lg space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div class="flex items-center gap-2 text-sky-400 font-bold text-sm">
+              <i data-lucide="building" class="w-4 h-4"></i> 宿泊先一覧（3拠点）
+            </div>
+            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-0.5 rounded-full">合計4泊</span>
+          </div>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <!-- ホテル 1 -->
+            <div class="bg-slate-800/80 rounded-xl p-3.5 border border-slate-700/80 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-sky-300 bg-sky-950 px-2 py-0.5 rounded border border-sky-800">12/30 - 01/01 (2泊)</span>
+                <span class="text-[11px] text-slate-400">新村 (Sinchon)</span>
+              </div>
+              <div class="font-bold text-base text-white pt-1">
+                <a href="https://www.google.com/maps/search/?api=1&query=Brown+Suites+Sinchon+Central+Seoul" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline inline-flex items-center gap-1">
+                  Brown Suites Hotel Sinchon Central <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+              <p class="text-xs text-slate-400">新村エリア。広々レジデンスで大晦日の珍味食堂・丸ご飯に最適</p>
             </div>
 
-            <!-- Accommodations Showcase -->
-            <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
-                <div class="bg-slate-900 text-white p-4 flex items-center justify-between">
-                    <h2 class="font-bold text-base flex items-center gap-2">
-                        <i data-lucide="hotel" class="w-5 h-5 text-blue-400"></i> 宿泊先一覧（3拠点）
-                    </h2>
-                    <span class="text-xs bg-slate-800 px-2.5 py-1 rounded-full text-slate-300">合計 4泊</span>
-                </div>
-                <div class="divide-y divide-slate-100">
-                    
-                    <!-- Hotel 1 -->
-                    <div class="p-4 sm:p-5 hover:bg-slate-50/80 transition-colors">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                            <div class="flex items-center gap-2">
-                                <span class="bg-blue-100 text-blue-800 font-bold text-xs px-2.5 py-1 rounded-md">12/30 - 01/01 (2泊)</span>
-                                <span class="text-xs font-medium text-slate-500">新村 (Sinchon)</span>
-                            </div>
-                            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">2ベッドルームスイート [予約確定]</span>
-                        </div>
-                        <h3 class="font-bold text-slate-900 text-lg">Brown Suites Hotel Sinchon Central</h3>
-                        <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i> 新村エリア。広々レジデンスで大晦日の真味食堂・紅白鑑賞に最適
-                        </p>
-                    </div>
-
-                    <!-- Hotel 2 -->
-                    <div class="p-4 sm:p-5 hover:bg-slate-50/80 transition-colors">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                            <div class="flex items-center gap-2">
-                                <span class="bg-indigo-100 text-indigo-800 font-bold text-xs px-2.5 py-1 rounded-md">01/01 - 01/02 (1泊)</span>
-                                <span class="text-xs font-medium text-slate-500">鍾路3街 (Jongno 3-ga)</span>
-                            </div>
-                            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">2室予約 [予約確定]</span>
-                        </div>
-                        <h3 class="font-bold text-slate-900 text-lg">Hotel Venue G Seoul</h3>
-                        <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i> 清渓川沿い。広蔵市場（鍾路5街サンナクチ）＆水原アクセス抜群
-                        </p>
-                    </div>
-
-                    <!-- Hotel 3 -->
-                    <div class="p-4 sm:p-5 hover:bg-slate-50/80 transition-colors">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
-                            <div class="flex items-center gap-2">
-                                <span class="bg-amber-100 text-amber-800 font-bold text-xs px-2.5 py-1 rounded-md">01/02 - 01/03 (1泊)</span>
-                                <span class="text-xs font-medium text-slate-500">雲西駅前 (Unseo)</span>
-                            </div>
-                            <span class="text-xs bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">2室予約 [予約確定]</span>
-                        </div>
-                        <h3 class="font-bold text-slate-900 text-lg">Golden Tulip Incheon Airport Hotel & Suites</h3>
-                        <p class="text-xs text-slate-500 mt-1 flex items-center gap-1">
-                            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-slate-400"></i> 雲西駅直結。最終日の大型スーパー買い出し＆翌早朝便に最適
-                        </p>
-                    </div>
-
-                </div>
+            <!-- ホテル 2 -->
+            <div class="bg-slate-800/80 rounded-xl p-3.5 border border-slate-700/80 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-800">01/01 - 01/02 (1泊)</span>
+                <span class="text-[11px] text-slate-400">鍾路3街 (Jongno 3-ga)</span>
+              </div>
+              <div class="font-bold text-base text-white pt-1">
+                <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Venue+G+Seoul" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline inline-flex items-center gap-1">
+                  Hotel Venue G Seoul <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+              <p class="text-xs text-slate-400">清渓川沿い。清渓川・鍾路（広蔵市場サンナクジ）＆水原アクセス抜群</p>
             </div>
 
-            <!-- Route Quick Map Overview Card -->
-            <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-xl p-5 shadow-sm">
-                <h3 class="font-bold text-sm text-indigo-300 uppercase tracking-wider mb-3 flex items-center gap-2">
-                    <i data-lucide="route" class="w-4 h-4"></i> 全体行程ルートマップ
-                </h3>
-                <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-                    <span class="px-3 py-1.5 bg-white/10 rounded-lg backdrop-blur-sm">山形市</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-blue-500/30 text-blue-200 border border-blue-400/30 rounded-lg">仙台空港</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-indigo-500/30 text-indigo-200 border border-indigo-400/30 rounded-lg">仁川空港</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-purple-500/30 text-purple-200 border border-purple-400/30 rounded-lg">新村(ソウル)</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-red-500/30 text-red-200 border border-red-400/30 rounded-lg">水原(スウォン)日帰り</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-amber-500/30 text-amber-200 border border-amber-400/30 rounded-lg">鍾路3街</span>
-                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-slate-400"></i>
-                    <span class="px-3 py-1.5 bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 rounded-lg">雲西(仁川)</span>
-                </div>
+            <!-- ホテル 3 -->
+            <div class="bg-slate-800/80 rounded-xl p-3.5 border border-slate-700/80 space-y-1">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-indigo-300 bg-indigo-950 px-2 py-0.5 rounded border border-indigo-800">01/02 - 01/03 (1泊)</span>
+                <span class="text-[11px] text-slate-400">雲西駅前 (Unseo)</span>
+              </div>
+              <div class="font-bold text-base text-white pt-1">
+                <a href="https://www.google.com/maps/search/?api=1&query=Golden+Tulip+Incheon+Airport+Hotel+Suites" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline inline-flex items-center gap-1">
+                  Golden Tulip Incheon Airport Hotel & Suites <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+              <p class="text-xs text-slate-400">雲西駅直結。最終日の大型スーパーでお土産爆買い＆無駄なし移動</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- DAY 1 TAB -->
-        <section id="content-day1" class="tab-content hidden space-y-4">
-            <div class="bg-blue-600 text-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                <div>
-                    <span class="text-xs bg-blue-500/80 text-blue-100 px-2 py-0.5 rounded font-semibold">Day 1</span>
-                    <h2 class="text-lg font-bold">12月30日(水) 【山形〜仙台空港〜ソウル・新村へ】</h2>
-                </div>
-                <i data-lucide="plane-takeoff" class="w-8 h-8 opacity-80"></i>
+        <!-- 全体行程ルートマップ -->
+        <div class="bg-slate-900 text-white rounded-2xl p-5 shadow-lg space-y-3">
+          <div class="flex items-center gap-2 text-indigo-400 font-bold text-sm border-b border-slate-800 pb-2">
+            <i data-lucide="map" class="w-4 h-4"></i> 全体行程ルートマップ
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-medium pt-1">
+            <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">山形市</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-blue-950 text-blue-300 px-3 py-1.5 rounded-lg border border-blue-800">仙台空港</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-indigo-950 text-indigo-300 px-3 py-1.5 rounded-lg border border-indigo-800">仁川空港</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-sky-950 text-sky-300 px-3 py-1.5 rounded-lg border border-sky-800">新村(ソウル)</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-rose-950 text-rose-300 px-3 py-1.5 rounded-lg border border-rose-800">水原(スウォン)日帰り</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-amber-950 text-amber-300 px-3 py-1.5 rounded-lg border border-amber-800">鍾路3街</span>
+            <span class="text-slate-500 py-1.5">➔</span>
+            <span class="bg-emerald-950 text-emerald-300 px-3 py-1.5 rounded-lg border border-emerald-800">雲西(仁川)</span>
+          </div>
+        </div>
+
+        <!-- Googleマップ利用に関する注意書き（一番下に移動） -->
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-xs text-amber-900 flex gap-3 items-start shadow-sm mt-6">
+          <i data-lucide="info" class="w-4 h-4 text-amber-600 shrink-0 mt-0.5"></i>
+          <div>
+            <span class="font-bold text-amber-900 block text-sm mb-0.5">💡 Googleマップご利用上の注意</span>
+            韓国国内の法的制限のため、Googleマップの徒歩・車ナビ案内は正常に動作しません。本しおりの検索リンクは**「位置確認・口コミ・写真参照用」**としてご利用いただき、現地での経路案内はNaver Mapアプリ等をご活用ください。
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Day 1 -->
+      <div id="content-day1" class="tab-content hidden space-y-4">
+        <!-- ヘッダーバナー (青) -->
+        <div class="bg-blue-600 text-white rounded-2xl p-4 shadow-md flex items-center justify-between">
+          <div>
+            <span class="bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Day 1</span>
+            <h2 class="text-lg font-bold mt-1">12月30日(水) 【山形〜仙台空港〜ソウル・新村へ】</h2>
+          </div>
+          <i data-lucide="plane-takeoff" class="w-7 h-7 text-blue-200 shrink-0"></i>
+        </div>
+
+        <!-- タイムライン -->
+        <div class="space-y-3 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200 pl-2">
+          
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🚗</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">08:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">移動時間: 約90分</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">山形市自宅を自家用車（プリウス）で出発</div>
+              <p class="text-xs text-slate-500">スーツケース2個（親夫婦用1・娘二人用1）積み込み。山形自動車道〜東北自動車道経由。雪道・凍結に十分注意。</p>
             </div>
+          </div>
 
-            <div class="relative pl-6 space-y-6 timeline-line">
-
-                <!-- Item 1 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="car" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">08:30</span>
-                            <span>移動時間: 約90分</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">山形市自宅を自家用車で出発</h4>
-                        <p class="text-xs text-slate-600 mt-1">山形自動車道〜東北自動車道経由。年末の冬道・凍結に十分注意。</p>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="parking-square" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">10:00</span>
-                            <span>仙台空港（SDJ）</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">仙台空港到着＆駐車場へ入庫</h4>
-                        <p class="text-xs text-slate-600 mt-1">空港駐車場または予約済み民間駐車場へ車を駐車。</p>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="clipboard-check" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">10:45</span>
-                            <span>国際線ターミナル</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">チェックイン ＆ 保安検査通過</h4>
-                        <p class="text-xs text-slate-600 mt-1">搭乗手続き、荷物預け入れ。事前に手荷物の重量をチェック。</p>
-                    </div>
-                </div>
-
-                <!-- Flight Highlighting -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        ✈️
-                    </div>
-                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-xl border border-blue-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-blue-800 font-semibold mb-1">
-                            <span>フライト（直行便）</span>
-                            <span class="bg-blue-600 text-white px-2 py-0.5 rounded text-[10px]">所要: 2時間35分</span>
-                        </div>
-                        <div class="flex items-center justify-between font-bold text-slate-900 text-base my-1">
-                            <div>仙台 (SDJ) <span class="text-sm font-normal text-slate-600">12:45発</span></div>
-                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
-                            <div>仁川 (ICN) <span class="text-sm font-normal text-slate-600">15:20着</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="smartphone" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">15:20</span>
-                            <span>仁川国際空港 T1/T2</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">到着・入国手続き ＆ 通信・交通準備</h4>
-                        <p class="text-xs text-slate-600 mt-1">入国審査、SIM/eSIMの有効化設定、T-moneyカードへのウォンチャージ。</p>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="bus" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">16:30</span>
-                            <span>移動</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">新村（シンチョン）へ移動</h4>
-                        <p class="text-xs text-slate-600 mt-1">
-                            ・手段A: ✈️ 空港リムジンバス 6002番（直行で楽）<br>
-                            ・手段B: 🚈 AREX（空港鉄道）で弘大入口駅 ➔ タクシーまたは地下鉄で新村へ
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="key" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">18:00</span>
-                            <span>チェックイン</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">Brown Suites Hotel Sinchon Central 入室</h4>
-                        <p class="text-xs text-slate-600 mt-1">2ベッドルームレジデンス。荷物を解いて少しリラックス。</p>
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="utensils" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-blue-600 text-sm">19:00</span>
-                            <span>新村・弘大エリア</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">初夜ディナー＆夜の街散策</h4>
-                        <p class="text-xs text-slate-600 mt-1">タッカンマリや本場サムギョプサルに舌鼓。学生街の賑やかな雰囲気を散策。</p>
-                    </div>
-                </div>
-
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🅿️</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">10:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">仙台空港（SDJ）</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">仙台空港到着 ＆ 駐車場へ入庫</div>
+              <p class="text-xs text-slate-500">空港駐車場または予約済み民間駐車場へお車を入庫。</p>
             </div>
-        </section>
+          </div>
 
-        <!-- DAY 2 TAB -->
-        <section id="content-day2" class="tab-content hidden space-y-4">
-            <div class="bg-indigo-700 text-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                <div>
-                    <span class="text-xs bg-indigo-600/80 text-indigo-100 px-2 py-0.5 rounded font-semibold">Day 2</span>
-                    <h2 class="text-lg font-bold">12月31日(木) 【ソウル観光・真味食堂ケジャン＆大晦日宴会】</h2>
-                </div>
-                <i data-lucide="sparkles" class="w-8 h-8 opacity-80"></i>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🎫</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">10:45</span>
+                <span class="text-[11px] text-slate-400 font-medium">国際線ターミナル</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">チェックイン ＆ 保安検査通過</div>
+              <p class="text-xs text-slate-500">搭乗手続き、荷物預け入れ。事前ドコモ等のWi-Fi／eSIMの確認。</p>
             </div>
+          </div>
 
-            <div class="relative pl-6 space-y-6 timeline-line">
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="shopping-bag" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-indigo-600 text-sm">09:30</span>
-                            <span>明洞・東大門</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">明洞・東大門散策 ＆ ショッピング</h4>
-                        <p class="text-xs text-slate-600 mt-1">コスメ、服飾、冬のソウル街歩き。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="coffee" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-indigo-600 text-sm">13:00</span>
-                            <span>カフェ・ホテル</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">カフェタイム ＆ ホテルで夜の準備</h4>
-                        <p class="text-xs text-slate-600 mt-1">夕方からの真味食堂・夜宴会に向けてゆったり温かいカフェで一休み。</p>
-                    </div>
-                </div>
-
-                <!-- Highlight Confirmed Dinner -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50 ring-emerald-100">
-                        <i data-lucide="check-circle-2" class="w-5 h-5"></i>
-                    </div>
-                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-500 p-4 rounded-xl shadow-md flex-1">
-                        <div class="flex items-center justify-between text-xs text-emerald-800 font-bold mb-1">
-                            <span class="text-sm">18:00 ディナー 【予約手配完了！】</span>
-                            <span class="bg-emerald-600 text-white px-2.5 py-0.5 rounded-full text-[10px] font-bold">Visaコンシェルジュ予約</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-lg">「真味食堂（진미식당）」カンジャンケジャン 🦀</h4>
-                        <div class="text-xs text-slate-700 mt-2 space-y-1">
-                            <p><strong>予約名:</strong> Mr. YASUHIRO （大人4名様）</p>
-                            <p><strong>住所:</strong> ソウル特別市麻浦区麻浦大路186-6 (TEL: +82-2-3211-4468)</p>
-                            <p class="text-emerald-800 font-medium pt-1">ミシュラン掲載・ソウル最高峰のカンジャンケジャン（渡り蟹の醤油漬け）を堪能！</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-indigo-600 text-sm">20:00</span>
-                            <span>スーパー / コンビニ</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">買い出し（チキン・ドリンク・おつまみ）</h4>
-                        <p class="text-xs text-slate-600 mt-1">韓国フライドチキン（BHCやKyoChon）やチャミスル・ビールを調達。</p>
-                    </div>
-                </div>
-
-                <!-- Midnight Party Highlight -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="tv" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-4 rounded-xl shadow-md flex-1">
-                        <div class="flex items-center justify-between text-xs text-purple-200 mb-1">
-                            <span class="font-bold">21:00 〜 カウントダウン</span>
-                            <span>新村ホテルのお部屋</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-white">大晦日のお部屋まったり宴会 🎍🎉</h4>
-                        <p class="text-xs text-slate-200 mt-2 leading-relaxed">
-                            VPN接続 ➔ NHKプラス/NHK総合で「紅白歌合戦」を鑑賞しながら家族で乾杯！<br>
-                            ソウルのあたたかいお部屋でゆっくり2027年カウントダウンを迎えます。
-                        </p>
-                    </div>
-                </div>
-
+          <!-- フライト強調カード -->
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">✈️</span>
+            <div class="bg-blue-50/90 rounded-2xl p-4 shadow-sm border border-blue-200 flex-1 space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-blue-700 bg-blue-100 px-2 py-0.5 rounded">フライト（直行便）</span>
+                <span class="text-xs font-bold text-blue-700">所要: 2時間35分</span>
+              </div>
+              <div class="flex items-center justify-between text-slate-900 font-extrabold text-base">
+                <div>仙台 (SDJ) <span class="text-xs font-normal text-slate-500 block">12:45 発</span></div>
+                <div class="text-blue-500 text-xs">➔</div>
+                <div>仁川 (ICN) <span class="text-xs font-normal text-slate-500 block">15:20 着</span></div>
+              </div>
+              <p class="text-[11px] text-blue-900/80">アシアナ航空 OZ151便 ｜ 機内食サービスあり</p>
             </div>
-        </section>
+          </div>
 
-        <!-- DAY 3 TAB -->
-        <section id="content-day3" class="tab-content hidden space-y-4">
-            <div class="bg-red-600 text-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                <div>
-                    <span class="text-xs bg-red-500/80 text-red-100 px-2 py-0.5 rounded font-semibold">Day 3</span>
-                    <h2 class="text-lg font-bold">1月1日(金・元旦) 【鍾路移動＆水原＆広蔵市場でサンナクチ】</h2>
-                </div>
-                <i data-lucide="landmark" class="w-8 h-8 opacity-80"></i>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🛬</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">15:20</span>
+                <span class="text-[11px] text-slate-400 font-medium">仁川国際空港 T1/T2</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">到着・入国手続き ＆ 通信・交通準備</div>
+              <p class="text-xs text-slate-500">入国審査、SIM/eSIMの有効化設定、手持ちT-moneyカードへのウォンチャージ。</p>
             </div>
+          </div>
 
-            <div class="relative pl-6 space-y-6 timeline-line">
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="luggage" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-red-600 text-sm">09:00</span>
-                            <span>新村 ➔ 鍾路3街</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">新村チェックアウト ＆ 鍾路ホテルへ荷物預け</h4>
-                        <p class="text-xs text-slate-600 mt-1">タクシーで「Hotel Venue G（鍾路3街）」へ。フロントに荷物をドロップ。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="train" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-red-600 text-sm">10:00</span>
-                            <span>移動（所要: 約45〜60分）</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">ソウルから水原（スウォン）駅へ移動</h4>
-                        <p class="text-xs text-slate-600 mt-1">鍾路3街駅から地下鉄1号線で1本（またはソウル駅からKTX/ITX）。</p>
-                    </div>
-                </div>
-
-                <!-- Highlight Lunch -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="flame" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-red-50 border border-red-200 p-4 rounded-xl shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-red-800 font-semibold mb-1">
-                            <span>11:30 水原ランチ</span>
-                            <span class="bg-red-200 text-red-900 px-2 py-0.5 rounded text-[10px] font-bold">名物グルメ</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-base">水原王カルビ（本水原カルビ or カボジョン）</h4>
-                        <p class="text-xs text-slate-700 mt-1">水原名物の巨大な特大骨付きカルビで贅沢元旦ランチ！</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="camera" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-red-600 text-sm">13:30</span>
-                            <span>水原市内観光</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">世界遺産「水原華城（スウォンファソン）」＆ 行宮洞散策</h4>
-                        <p class="text-xs text-slate-600 mt-1">壮大な城郭歩き＆カフェ街でコーヒータイム。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-red-600 text-sm">17:00</span>
-                            <span>水原 ➔ 鍾路5街</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">水原駅から電車で「鍾路5街」へ帰還</h4>
-                        <p class="text-xs text-slate-600 mt-1">1号線で広蔵市場最寄りの「鍾路5街駅」へ直行。</p>
-                    </div>
-                </div>
-
-                <!-- Highlight San-nakji Market Entry -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-amber-50 border border-amber-300 p-4 rounded-xl shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-amber-900 font-bold mb-1">
-                            <span>18:00 元旦ディナー ＆ ディープ食体験</span>
-                            <span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px]">鍾路5街</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-base">「広蔵市場（クァンジャンシジャン）」でサンナクチ！ 🐙</h4>
-                        <p class="text-xs text-slate-700 mt-1">
-                            動くテナガダコ「サンナクチ（手長ダコの踊り食い）」やユッケの名店（プチョンユッケ等）で元旦のナイト市場グルメ！緑豆チヂミやピンデトッも堪能。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-red-100 text-red-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="moon" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-red-600 text-sm">20:00</span>
-                            <span>Hotel Venue G</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">Hotel Venue G チェックイン ＆ 部屋でリラックス</h4>
-                        <p class="text-xs text-slate-600 mt-1">広蔵市場から徒歩約10分。チェックインし綺麗なお部屋で快適に休養。</p>
-                    </div>
-                </div>
-
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🚃</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">16:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">移動</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">新村（シンチョン）へ移動</div>
+              <p class="text-xs text-slate-500">・手段A: 🚌 空港リムジンバス 6002番（乗り換えなし）<br>・手段B: 🚆 AREX（空港鉄道）で弘大入口駅 ➔ タクシーまたは地下鉄で新村へ</p>
             </div>
-        </section>
+          </div>
 
-        <!-- DAY 4 TAB -->
-        <section id="content-day4" class="tab-content hidden space-y-4">
-            <div class="bg-amber-600 text-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                <div>
-                    <span class="text-xs bg-amber-500/80 text-amber-100 px-2 py-0.5 rounded font-semibold">Day 4</span>
-                    <h2 class="text-lg font-bold">1月2日(土) 【ソウル〜雲西へ移動 ＆ 爆買い＆最終夜】</h2>
-                </div>
-                <i data-lucide="shopping-bag" class="w-8 h-8 opacity-80"></i>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🔑</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">18:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">チェックイン</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">
+                <a href="https://www.google.com/maps/search/?api=1&query=Brown+Suites+Sinchon+Central+Seoul" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                  Brown Suites Hotel Sinchon Central 入室 ↗
+                </a>
+              </div>
+              <p class="text-xs text-slate-500">2ベッドルームレジデンス。荷物を解いて少しリラックス。</p>
             </div>
+          </div>
 
-            <div class="relative pl-6 space-y-6 timeline-line">
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="coffee" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-amber-600 text-sm">10:00</span>
-                            <span>仁寺洞・益善洞</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">鍾路チェックアウト ➔ 益善洞（イクソンドン）散策</h4>
-                        <p class="text-xs text-slate-600 mt-1">韓屋レトロな雰囲気が残る益善洞でカフェタイム＆おしゃれな雑貨選び。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="utensils" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-amber-600 text-sm">13:00</span>
-                            <span>ソウル市内ランチ</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">昼食（ソルロンタン、タッカルビなど）</h4>
-                        <p class="text-xs text-slate-600 mt-1">あったかいスープ系料理（神仙ソルロンタン等）で体をお腹から温める。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="subway" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-amber-600 text-sm">15:00</span>
-                            <span>移動（ソウル ➔ 雲西）</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">AREXで空港手前の「雲西（ウンソ）駅」へ移動</h4>
-                        <p class="text-xs text-slate-600 mt-1">明日の早朝便に備えて空港至近エリアへ前泊移動。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="building" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-amber-600 text-sm">16:30</span>
-                            <span>雲西駅直結</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">Golden Tulip Incheon Airport Hotel チェックイン</h4>
-                        <p class="text-xs text-slate-600 mt-1">駅目の前で快適。お部屋に荷物を置いたら買い出しへ。</p>
-                    </div>
-                </div>
-
-                <!-- Highlight Shopping -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="package-check" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-amber-50 border border-amber-300 p-4 rounded-xl shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-amber-900 font-semibold mb-1">
-                            <span>17:30 お土産大量購入</span>
-                            <span class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded text-[10px] font-bold">スーパー爆買い</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900 text-base">ロッテマート 永宗空都市店</h4>
-                        <p class="text-xs text-slate-700 mt-1">韓国のり、人気ラーメン、お菓子、調味料など家族全員のお土産をここで一括調達！</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="utensils" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-amber-600 text-sm">19:00</span>
-                            <span>雲西駅周辺</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">ラストディナー ＆ 荷造りパッキング</h4>
-                        <p class="text-xs text-slate-600 mt-1">サムギョプサルやチキンで締めくくり！明日の早朝チェックアウトに向けて荷物を完璧に整理。</p>
-                    </div>
-                </div>
-
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🍴</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">19:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">新村・弘大エリア</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">初夜ディナー ＆ 夜の街散策</div>
+              <p class="text-xs text-slate-500">タッカンマリや本場サムギョプサルに舌鼓。学生街の華やかな雰囲気を堪能。</p>
             </div>
-        </section>
+          </div>
 
-        <!-- DAY 5 TAB -->
-        <section id="content-day5" class="tab-content hidden space-y-4">
-            <div class="bg-emerald-600 text-white p-4 rounded-xl shadow-sm flex justify-between items-center">
-                <div>
-                    <span class="text-xs bg-emerald-500/80 text-emerald-100 px-2 py-0.5 rounded font-semibold">Day 5</span>
-                    <h2 class="text-lg font-bold">1月3日(日) 【仁川空港〜仙台帰国〜山形へ】</h2>
-                </div>
-                <i data-lucide="plane-landing" class="w-8 h-8 opacity-80"></i>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div id="content-day2" class="tab-content hidden space-y-4">
+        <!-- ヘッダーバナー (紫) -->
+        <div class="bg-indigo-600 text-white rounded-2xl p-4 shadow-md flex items-center justify-between">
+          <div>
+            <span class="bg-indigo-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Day 2</span>
+            <h2 class="text-lg font-bold mt-1">12月31日(木) 【ソウル観光・珍味食堂ケジャン ＆ 大晦日宴会】</h2>
+          </div>
+          <i data-lucide="sparkles" class="w-7 h-7 text-indigo-200 shrink-0"></i>
+        </div>
+
+        <div class="space-y-3 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200 pl-2">
+          
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🛍️</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">09:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">明洞・東大門</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">明洞・東大門散策 ＆ ショッピング</div>
+              <p class="text-xs text-slate-500">コスメ、服飾、冬のソウル街歩き。</p>
             </div>
+          </div>
 
-            <div class="relative pl-6 space-y-6 timeline-line">
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="clock" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-emerald-600 text-sm">06:40</span>
-                            <span>雲西駅 ➔ 仁川T1</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">早朝チェックアウト ＆ 空港へ</h4>
-                        <p class="text-xs text-slate-600 mt-1">AREX普通電車で雲西駅から仁川国際空港第1ターミナルへ（2駅・約8分）。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="plane" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-emerald-600 text-sm">07:05</span>
-                            <span>仁川国際空港 (ICN)</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">チェックイン・保安検査・免税品受け取り</h4>
-                        <p class="text-xs text-slate-600 mt-1">出発2時間半前到着。事前購入免税品のピックアップ＆最後のお買い物。</p>
-                    </div>
-                </div>
-
-                <!-- Flight Highlighting -->
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        ✈️
-                    </div>
-                    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 p-4 rounded-xl border border-emerald-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-emerald-800 font-semibold mb-1">
-                            <span>復路フライト（直行便）</span>
-                            <span class="bg-emerald-600 text-white px-2 py-0.5 rounded text-[10px]">所要: 2時間10分</span>
-                        </div>
-                        <div class="flex items-center justify-between font-bold text-slate-900 text-base my-1">
-                            <div>仁川 (ICN) <span class="text-sm font-normal text-slate-600">09:35発</span></div>
-                            <i data-lucide="arrow-right" class="w-4 h-4 text-slate-400"></i>
-                            <div>仙台 (SDJ) <span class="text-sm font-normal text-slate-600">11:45着</span></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="car" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-emerald-600 text-sm">11:45 〜 13:00</span>
-                            <span>仙台空港（SDJ）</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">仙台空港到着 ➔ 入国・税関 ➔ 車へ</h4>
-                        <p class="text-xs text-slate-600 mt-1">荷物をピックアップし駐車場から自家用車を出庫。</p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 flex gap-4">
-                    <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 ring-4 ring-slate-50">
-                        <i data-lucide="home" class="w-4 h-4"></i>
-                    </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex-1">
-                        <div class="flex items-center justify-between text-xs text-slate-500 mb-1">
-                            <span class="font-bold text-emerald-600 text-sm">14:30</span>
-                            <span>山形市自宅</span>
-                        </div>
-                        <h4 class="font-bold text-slate-900">無事自宅に到着・解散 🏠</h4>
-                        <p class="text-xs text-slate-600 mt-1">お疲れ様でした！最高の年末年始韓国旅行完了。</p>
-                    </div>
-                </div>
-
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">☕</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">13:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">カフェ・ホテル</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">カフェタイム ＆ ホテルで夜の準備</div>
+              <p class="text-xs text-slate-500">夕方からの珍味食堂・宴会に向けて温かいカフェで一休み。</p>
             </div>
-        </section>
+          </div>
 
-        <!-- MEMO & PREPARATION TAB -->
-        <section id="content-memo" class="tab-content hidden space-y-6">
-
-            <!-- Interactive Packing Checklist -->
-            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
-                    <i data-lucide="check-square" class="w-5 h-5 text-blue-600"></i> 持ち物チェックリスト
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs" id="checklist">
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>パスポート（有効期限6ヶ月以上）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>クレジットカード（コンシェルジュ枠利用カード含む）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>変換プラグ（SEタイプ / Cタイプ）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>VPN設定済みスマートフォン（NHKプラス観賞用）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>SIM / eSIM 事前予約・設定準備</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>T-moneyカード（交通系IC）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>防寒具（極暖ヒートテック、ダウン、カイロ、手袋）</span>
-                    </label>
-                    <label class="flex items-center gap-2.5 p-2 rounded hover:bg-slate-50 cursor-pointer border border-slate-100">
-                        <input type="checkbox" class="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500">
-                        <span>常備薬・胃腸薬・絆創膏</span>
-                    </label>
-                </div>
+          <!-- 予約確定ハイライト -->
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">🦀</span>
+            <div class="bg-emerald-50 rounded-2xl p-4 shadow-sm border border-emerald-300 flex-1 space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">ディナー【予約確定】</span>
+                <span class="text-xs font-bold text-emerald-800 bg-emerald-600 text-white px-2 py-0.5 rounded">Visaコンシェルジュ予約</span>
+              </div>
+              <div class="font-extrabold text-base text-slate-900">
+                18:00 「
+                <a href="https://www.google.com/maps/search/?api=1&query=Jinshikdang+Ganjang+Gejang+Seoul" target="_blank" rel="noopener noreferrer" class="text-emerald-700 underline">
+                  珍味食堂（진미식당）
+                </a>」カンジャンケジャン 🦀
+              </div>
+              <div class="text-xs text-slate-700 space-y-0.5">
+                <p>予約名: Mr. YASUHIRO （大人4名様）</p>
+                <p>住所: ソウル特別市麻浦区麻浦大路186-6 (TEL: 02-3211-4468)</p>
+                <p class="text-emerald-900 font-medium pt-1">ミシュラン掲載・ソウル最高峰のカンジャンケジャン（渡り蟹の醤油漬け）を堪能！</p>
+              </div>
             </div>
+          </div>
 
-            <!-- Essential Apps Grid -->
-            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
-                <h3 class="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
-                    <i data-lucide="smartphone" class="w-5 h-5 text-indigo-600"></i> 現地必須アプリ
-                </h3>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-                        <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
-                            <i data-lucide="map" class="w-4 h-4 text-emerald-600"></i> NAVER Map
-                        </div>
-                        <p class="text-[11px] text-slate-500 mt-1">韓国のGoogle Map。徒歩・電車ルート検索に必須。</p>
-                    </div>
-                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-                        <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
-                            <i data-lucide="navigation" class="w-4 h-4 text-amber-500"></i> Kakao T
-                        </div>
-                        <p class="text-[11px] text-slate-500 mt-1">4人移動用の大型タクシー（Venti）等の配車に便利。</p>
-                    </div>
-                    <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
-                        <div class="font-bold text-xs text-slate-900 flex items-center gap-1.5">
-                            <i data-lucide="languages" class="w-4 h-4 text-blue-500"></i> Google翻訳 / Papago
-                        </div>
-                        <p class="text-[11px] text-slate-500 mt-1">メニュー写真のリアルタイム画像翻訳が超強力。</p>
-                    </div>
-                </div>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🛒</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">20:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">スーパー / コンビニ</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">買い出し（チキン・ドリンク・おつまみ）</div>
+              <p class="text-xs text-slate-500">韓国フライドチキン（BHCやKyoChon）やチャミスル・ビールを調達。</p>
             </div>
+          </div>
 
-            <!-- Transport Tips -->
-            <div class="bg-blue-50 border border-blue-200 p-5 rounded-xl text-xs text-blue-900 space-y-2">
-                <h4 class="font-bold text-sm flex items-center gap-1.5 text-blue-900">
-                    <i data-lucide="info" class="w-4 h-4"></i> 4人移動のコツ＆アドバイス
-                </h4>
-                <p>・ソウル市内での短距離・中距離移動は、電車よりも<strong>「タクシー（Kakao TでVenti配車）」</strong>が断然お得で快適です。4人で割ると地下鉄とほぼ同額〜少し高いくらいで目的地直行できます。</p>
-                <p>・12月〜1月は極寒期（マイナス10度前後になることも）のため、長時間徒歩移動を避けタクシー利用を推奨します。</p>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">🎍</span>
+            <div class="bg-indigo-950 text-white rounded-2xl p-4 shadow-md flex-1 space-y-2 border border-indigo-800">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-indigo-300">21:00 〜 カウントダウン</span>
+                <span class="text-[11px] text-slate-400">新村ホテルの部屋</span>
+              </div>
+              <div class="font-extrabold text-base text-white">大晦日のお部屋まったり宴会 🥂✨</div>
+              <p class="text-xs text-slate-300">VPN接続 ➔ NHKプラス/NHK総合で「紅白歌合戦」を観ながら家族で乾杯！ソウルのあたたかいお部屋でゆっくり2027年カウントダウンを迎えます。</p>
             </div>
+          </div>
 
-            <!-- Emergency Contacts -->
-            <div class="bg-rose-50 border border-rose-200 p-5 rounded-xl text-xs text-rose-950 space-y-2">
-                <h4 class="font-bold text-sm flex items-center gap-1.5 text-rose-900">
-                    <i data-lucide="phone-call" class="w-4 h-4"></i> 緊急連絡先
-                </h4>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 font-mono">
-                    <div class="bg-white/80 p-2.5 rounded border border-rose-100">
-                        <span class="block text-[10px] text-slate-500 font-sans">在韓国日本国大使館 (ソウル)</span>
-                        <strong>+82-2-2170-5200</strong>
-                    </div>
-                    <div class="bg-white/80 p-2.5 rounded border border-rose-100">
-                        <span class="block text-[10px] text-slate-500 font-sans">警察 (Police) / 救急・消防 (Ambulance)</span>
-                        <strong>112 / 119</strong>
-                    </div>
-                </div>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div id="content-day3" class="tab-content hidden space-y-4">
+        <!-- ヘッダーバナー (青緑) -->
+        <div class="bg-teal-600 text-white rounded-2xl p-4 shadow-md flex items-center justify-between">
+          <div>
+            <span class="bg-teal-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Day 3</span>
+            <h2 class="text-lg font-bold mt-1">01月01日(金) 【元日 水原華城日帰り ＆ 広蔵市場サンナクジ】</h2>
+          </div>
+          <i data-lucide="castle" class="w-7 h-7 text-teal-200 shrink-0"></i>
+        </div>
+
+        <div class="space-y-3 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200 pl-2">
+          
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🧳</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">09:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">新村 CO</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">新村チェックアウト ➔ 水原（スウォン）へ移動</div>
+              <p class="text-xs text-slate-500">地下鉄1号線またはITXセマウル号で水原駅へ。スーツケースは駅ロッカーかタクシー移動活用。</p>
             </div>
+          </div>
 
-        </section>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🏯</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">10:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">水原市</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">
+                <a href="https://www.google.com/maps/search/?api=1&query=Hwaseong+Fortress+Suwon" target="_blank" rel="noopener noreferrer" class="text-teal-700 hover:underline">
+                  水原華城（Suwon Hwaseong） ↗
+                </a> 観光 ＆ 水原カルビランチ
+              </div>
+              <p class="text-xs text-slate-500">ユネスコ世界文化遺産の城郭散策。名物「水原王カルビ」で贅沢元日ランチ！</p>
+            </div>
+          </div>
 
-    </main>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🏨</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">16:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">鍾路3街</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">
+                ソウル市内移動 ➔ 
+                <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Venue+G+Seoul" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                  Hotel Venue G Seoul ↗
+                </a> チェックイン
+              </div>
+              <p class="text-xs text-slate-500">清渓川沿いの好立地ホテルに入室・荷物整理。</p>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="mt-12 text-center text-xs text-slate-400 py-6 border-t border-slate-200">
-        永沢家 2026-2027 韓国旅行プロジェクト 🇰🇷✈️
-    </footer>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">🐙</span>
+            <div class="bg-teal-50 rounded-2xl p-4 shadow-sm border border-teal-200 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-teal-800 bg-teal-100 px-2 py-0.5 rounded">夕食・屋台散策</span>
+                <span class="text-[11px] text-teal-700">鍾路5街</span>
+              </div>
+              <div class="font-extrabold text-base text-slate-900">
+                18:00 
+                <a href="https://www.google.com/maps/search/?api=1&query=Gwangjang+Market+Seoul" target="_blank" rel="noopener noreferrer" class="text-teal-700 underline">
+                  広蔵市場（광장시절） ↗
+                </a> で名物サンナクジ ＆ 屋台グルメ
+              </div>
+              <p class="text-xs text-slate-600">ユッケ＆サンナクジ（テナガダコ踊り食い）、緑豆ピンデトッ、トッポッキ等、元日の熱気あふれる屋台で晩酌！</p>
+            </div>
+          </div>
 
-    <!-- Script for Tab Switch & Dynamic Interactions -->
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        </div>
+      </div>
 
-        // Tab Switching Logic
-        function switchTab(tabId) {
-            // Hide all tab contents
-            const contents = document.querySelectorAll('.tab-content');
-            contents.forEach(content => content.classList.add('hidden'));
+      <!-- Day 4 -->
+      <div id="content-day4" class="tab-content hidden space-y-4">
+        <!-- ヘッダーバナー (オレンジ) -->
+        <div class="bg-amber-600 text-white rounded-2xl p-4 shadow-md flex items-center justify-between">
+          <div>
+            <span class="bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Day 4</span>
+            <h2 class="text-lg font-bold mt-1">01月02日(土) 【ソウル〜雲西へ移動 ＆ 爆買い＆最終夜】</h2>
+          </div>
+          <i data-lucide="shopping-bag" class="w-7 h-7 text-amber-200 shrink-0"></i>
+        </div>
 
-            // Reset active states for tab buttons
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
-                btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
-            });
+        <div class="space-y-3 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200 pl-2">
+          
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">☕</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">10:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">鍾路・益善洞</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">鍾路チェックアウト ➔ 益善洞（イクソンドン）散策</div>
+              <p class="text-xs text-slate-500">古民家レトロな雰囲気が残る韓屋街でカフェタイム＆おしゃれ雑貨散歩。</p>
+            </div>
+          </div>
 
-            // Show selected content
-            const activeContent = document.getElementById(`content-${tabId}`);
-            if (activeContent) {
-                activeContent.classList.remove('hidden');
-            }
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🥣</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">13:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">ソウル市内ランチ</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">昼食（ソルロンタン、タッカルビなど）</div>
+              <p class="text-xs text-slate-500">あっかいスープ料理（神仙ソルロンタン等）で体を芯から温める。</p>
+            </div>
+          </div>
 
-            // Set active style for selected button
-            const activeBtn = document.getElementById(`tab-${tabId}`);
-            if (activeBtn) {
-                activeBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
-                activeBtn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
-            }
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🚆</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">15:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">移動 (ソウル➔雲西)</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">AREXで空港手前の「雲西（ウンソ）駅」へ移動</div>
+              <p class="text-xs text-slate-500">明日の早朝便に備えて空港至近エリアへ前泊移動。</p>
+            </div>
+          </div>
 
-            // Scroll top smoothly on tab change
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🏨</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">16:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">雲西駅前</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">
+                <a href="https://www.google.com/maps/search/?api=1&query=Golden+Tulip+Incheon+Airport+Hotel+Suites" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                  Golden Tulip Incheon Airport Hotel チェックイン ↗
+                </a>
+              </div>
+              <p class="text-xs text-slate-500">駅目の前で快適。お部屋に荷物を置いたら買い物へ。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">🛒</span>
+            <div class="bg-amber-50 rounded-2xl p-4 shadow-sm border border-amber-300 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-amber-900 bg-amber-200 px-2 py-0.5 rounded">お土産爆買い</span>
+                <span class="text-[11px] text-amber-800">スーパー爆買い</span>
+              </div>
+              <div class="font-extrabold text-base text-slate-900">
+                17:30 
+                <a href="https://www.google.com/maps/search/?api=1&query=Lotte+Mart+Yeongjong+Sky+City+Incheon" target="_blank" rel="noopener noreferrer" class="text-amber-800 underline">
+                  ロッテマート 永宗空都市店 ↗
+                </a>
+              </div>
+              <p class="text-xs text-slate-600">韓国のり、人気ラーメン、お菓子、調味料など家族全員のお土産をここで一気に調達！</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🍖</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">19:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">雲西駅周辺</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">ラストディナー ＆ 荷造りパッキング</div>
+              <p class="text-xs text-slate-500">サムギョプサルやチキンで締めくくり。翌日の早朝チェックアウトに向けて荷物を完璧に整理。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div id="content-day5" class="tab-content hidden space-y-4">
+        <!-- ヘッダーバナー (緑) -->
+        <div class="bg-emerald-600 text-white rounded-2xl p-4 shadow-md flex items-center justify-between">
+          <div>
+            <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Day 5</span>
+            <h2 class="text-lg font-bold mt-1">01月03日(日) 【仁川空港〜仙台帰国〜山形へ】</h2>
+          </div>
+          <i data-lucide="plane-landing" class="w-7 h-7 text-emerald-200 shrink-0"></i>
+        </div>
+
+        <div class="space-y-3 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-slate-200 pl-2">
+          
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">⏰</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">06:40</span>
+                <span class="text-[11px] text-slate-400 font-medium">雲西駅 ➔ 仁川T1</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">早朝チェックアウト ＆ 空港へ</div>
+              <p class="text-xs text-slate-500">AREX普通電車で雲西駅から仁川国際空港第1ターミナルへ（2駅・約8分）。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">✈️</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">07:05</span>
+                <span class="text-[11px] text-slate-400 font-medium">仁川国際空港 (ICN)</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">チェックイン・保安検査・免税品受け取り</div>
+              <p class="text-xs text-slate-500">出発2時間半前到着。事前購入免税品のピックアップ＆最後のお買い物。</p>
+            </div>
+          </div>
+
+          <!-- フライト強調カード -->
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">✈️</span>
+            <div class="bg-emerald-50 rounded-2xl p-4 shadow-sm border border-emerald-300 flex-1 space-y-2">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-emerald-800 bg-emerald-200 px-2 py-0.5 rounded">復路フライト（直行便）</span>
+                <span class="text-xs font-bold text-emerald-800">所要: 2時間10分</span>
+              </div>
+              <div class="flex items-center justify-between text-slate-900 font-extrabold text-base">
+                <div>仁川 (ICN) <span class="text-xs font-normal text-slate-500 block">09:35 発</span></div>
+                <div class="text-emerald-600 text-xs">➔</div>
+                <div>仙台 (SDJ) <span class="text-xs font-normal text-slate-500 block">11:45 着</span></div>
+              </div>
+              <p class="text-[11px] text-emerald-900/80">アシアナ航空 OZ152便 ｜ 機内食サービスあり</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0 z-10 text-xs">🚗</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">11:45 〜 13:00</span>
+                <span class="text-[11px] text-slate-400 font-medium">仙台空港（SDJ）</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">仙台空港到着 ➔ 入国・税関 ➔ 車へ</div>
+              <p class="text-xs text-slate-500">荷物をピックアップし駐車場から自家用車（プリウス）を出庫。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 relative">
+            <span class="w-7 h-7 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0 z-10 text-xs">🏠</span>
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex-1 space-y-1">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-sm text-slate-900">14:30</span>
+                <span class="text-[11px] text-slate-400 font-medium">山形市自宅</span>
+              </div>
+              <div class="font-bold text-slate-800 text-sm">無事自宅に到着・解散 🏠</div>
+              <p class="text-xs text-slate-500">お疲れ様でした！最高の年末年始韓国旅行完了。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- メモ・準備 タブ -->
+      <div id="content-memo" class="tab-content hidden space-y-4">
+        
+        <!-- 持ち物チェックリスト -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-3">
+          <div class="flex items-center gap-2 text-blue-600 font-bold text-sm border-b pb-2">
+            <i data-lucide="check-square" class="w-4 h-4"></i> 持ち物チェックリスト
+          </div>
+          <div class="space-y-2 text-xs sm:text-sm text-slate-700">
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>パスポート</strong>（有効期限6ヶ月以上）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>T-moneyカード</strong>（手持ち2〜3枚持参＋不足1枚現地購入・チャージ用ウォン準備）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>Wiseカード</strong>（外貨決済用プリペットカード）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>予備クレジットカード</strong>（コンシェルジュ使用・JALカード / 楽天カード等）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>現金（韓国ウォン）</strong>（屋台・T-moneyチャージ用）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>変圧プラグ</strong>（SEタイプ / Cタイプ）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>MillenVPN アプリ</strong>（NHKプラスで紅白視聴用）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>SIM / eSIM</strong>（事前設定・認可準備）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>防寒具</strong>（極暖ヒートテック、ダウン、カイロ、手袋、Gore-Texシューズ）</span>
+            </label>
+            <label class="flex items-start gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-100 cursor-pointer">
+              <input type="checkbox" class="mt-0.5 rounded text-blue-600">
+              <span><strong>常備薬・胃腸薬・絆創膏</strong></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 現地必須アプリ -->
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-3">
+          <div class="flex items-center gap-2 text-indigo-600 font-bold text-sm border-b pb-2">
+            <i data-lucide="smartphone" class="w-4 h-4"></i> 現地必須アプリ
+          </div>
+          <div class="space-y-2 text-xs">
+            <div class="bg-emerald-50 p-3 rounded-xl border border-emerald-100">
+              <div class="font-bold text-emerald-900 text-sm">🗺️ NAVER Map</div>
+              <p class="text-emerald-800 mt-0.5">韓国のGoogle Map。徒歩・電車・バスルート検索に必須。</p>
+            </div>
+            <div class="bg-amber-50 p-3 rounded-xl border border-amber-100">
+              <div class="font-bold text-amber-900 text-sm">🚕 Kakao T</div>
+              <p class="text-amber-800 mt-0.5">4人移動用の大型タクシー（Venti）手配に便利。</p>
+            </div>
+            <div class="bg-blue-50 p-3 rounded-xl border border-blue-100">
+              <div class="font-bold text-blue-900 text-sm">🗣️ Google翻訳 / Papago</div>
+              <p class="text-blue-800 mt-0.5">メニュー写真のリアルタイムカメラ翻訳が強力。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4人移動のコツ＆アドバイス -->
+        <div class="bg-blue-50/80 rounded-2xl p-5 border border-blue-200 space-y-2 text-xs text-blue-950">
+          <div class="font-bold text-sm text-blue-900 flex items-center gap-1.5">
+            <i data-lucide="help-circle" class="w-4 h-4"></i> 4人移動のコツ＆アドバイス
+          </div>
+          <p>・ソウル市内での短距離・中距離移動は、電車よりも<strong>「タクシー（Kakao TでVenti配車）」</strong>が極めてお得で快適です。4人で割ると地下鉄とほぼ同額〜少し高いレベルで目的地へ直行できます。</p>
+          <p>・12月〜1月は極寒期（マイナス10度前後になることも）のため、屋外徒歩移動を避けタクシー利用を推奨します。</p>
+        </div>
+
+        <!-- 緊急連絡先 -->
+        <div class="bg-rose-50/80 rounded-2xl p-5 border border-rose-200 space-y-2 text-xs text-rose-950">
+          <div class="font-bold text-sm text-rose-900 flex items-center gap-1.5">
+            <i data-lucide="phone-call" class="w-4 h-4"></i> 緊急連絡先
+          </div>
+          <div class="bg-white/80 p-2.5 rounded-xl border border-rose-200/80 space-y-1">
+            <div class="font-bold">在大韓民国日本国大使館（ソウル）</div>
+            <p class="font-mono text-rose-700">+82-2-2170-5200</p>
+          </div>
+          <div class="bg-white/80 p-2.5 rounded-xl border border-rose-200/80 space-y-1">
+            <div class="font-bold">警察 (Police) / 救急・消防 (Ambulance)</div>
+            <p class="font-mono text-rose-700">112 / 119</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="mt-12 text-center text-xs text-slate-400">
+    永沢家 2026-2027 韓国旅行プロジェクト ✈️
+  </footer>
+
+  <!-- タブ切替JavaScript -->
+  <script>
+    // Lucideアイコン初期化
+    lucide.createIcons();
+
+    function switchTab(tabId) {
+      // 全コンテンツ非表示
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      // 対象表示
+      document.getElementById('content-' + tabId).classList.remove('hidden');
+
+      // 全タブボタンのスタイル初期化
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.className = "tab-btn flex-1 py-2.5 px-3 rounded-lg text-center text-slate-600 hover:text-slate-900 hover:bg-slate-100 whitespace-nowrap transition-all flex items-center justify-center gap-1.5 text-xs sm:text-sm font-bold";
+      });
+
+      // アクティブタブのスタイル
+      const activeTab = document.getElementById('tab-' + tabId);
+      activeTab.className = "tab-btn flex-1 py-2.5 px-3 rounded-lg text-center bg-blue-600 text-white font-bold whitespace-nowrap transition-all shadow-sm flex items-center justify-center gap-1.5 text-xs sm:text-sm";
+    }
+  </script>
 </body>
 </html>
